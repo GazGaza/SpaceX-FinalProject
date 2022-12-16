@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX Cargo Planner</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="SpaceX Icon.ico">
+    <script src="dist/bundle.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">
+                SpaceX Cargo Planner 
+            </a>
+        </h1>
+        <div class="listOpener"><img src="images/listIcon.png" alt="listButton"></div>
+        <div class="listCloser"><img src="images/closeButtonIcon.png" alt="closeButton"></div>
+    </header>
+    <main>
+        <div class="searchContainer">
+            <img src="images/searchIcon.png" alt="searchIcon">
+            <input type="text" placeholder="Search">
+        </div>
+        
+        
+        <div class="listContainer">
+            <h2>SHIPMENT LIST</h2>
+            <ul>
+                <li>
+                    <button class="active" name="gilaka" type="button" id="Amazon.com">Amazon</button>
+                </li>
+                <li>
+                    <button class="notActive" name="gilaka"  type="button" id="American Express">American Express</button>
+                </li>
+                <li>
+                    <button class="notActive" name="gilaka"  type="button" id="Walmart">Walmart</button>
+                </li>
+                <li>
+                    <button class="notActive" name="gilaka"  type="button" id="Apple">Apple</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cargoContainer">
+            <section class="companyInfo">
+                <h3 id="companyName"></h3>
+                <a href="#" id="companyEmail"></a>
+            </section>
+            <section class="boxesValue">
+                <p>CARGO BOXES</p>
+                <input type="text" id="boxes">
+            </section>
+            <h4>Number of required cargo bays</h4>
+            <span id="result"></span>
+        </div>
+    </main>
+</body>
+</html>
