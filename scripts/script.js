@@ -89,5 +89,5 @@ inputGilaki.addEventListener("keypress", (e) => {
 });
 
 
-window.onload(setActive(document.getElementById("Amazon.com")));
+window.onload = setActive(document.getElementById("Amazon.com"));
 
